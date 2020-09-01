@@ -1,0 +1,104 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+input::placeholder {
+  font-family: "Noto Serif", serif;
+}
+
+/*
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+
+
+.footer-sm-links a {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}  
+
+.twitter-footer {
+    margin-left: 0;
+    position: relative;
+
+}
+
+.twitter-footer::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    background-image: url("assets/twitter-brands.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.instagram-footer {
+    margin-left: 0;
+    position: relative;
+
+}
+
+.instagram-footer::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    background-image: url("assets/instagram-brands.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.fb-footer {
+    margin-left: 0;
+    position: relative;
+
+}
+
+.fb-footer::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    background-image: url("assets/facebook-f-brands.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.fgoogle-footer {
+    margin-left: 0;
+    position: relative;
+
+}
+
+.google-footer::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url("assets/google-plus-g-brands.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+*/
+
+/*# sourceMappingURL=style.css.map */
