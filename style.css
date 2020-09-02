@@ -18,7 +18,7 @@ input::placeholder {
   display: flex;
   justify-content: space-around;
   min-height: 150px;
-  background-color: #abc4ce;
+  background-color: #3f4b59;
   list-style: none;
 }
 
@@ -238,6 +238,7 @@ ul, li, p {
   width: 255px;
   height: 186px;
   margin-left: 50px;
+  opacity: 0.5;
 }
 
 .header-nav {
@@ -245,7 +246,7 @@ ul, li, p {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  background-color: #abc4ce;
+  background-color: #cfdaea;
 }
 
 .scheme-selector {
