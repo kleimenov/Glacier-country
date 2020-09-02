@@ -1,4 +1,3 @@
-/*
 
 .visually-hidden {
     position: absolute;
@@ -8,19 +7,22 @@
     margin: -1px;
   }
 
+  .footer-sm-links {
+    display: flex;
+    justify-content: space-around;
+    min-height: 150px;
+    background-color: rgb(171, 196, 206);
+    list-style: none;
+}
 
 
 .footer-sm-links a {
     font-size: 12px;
     font-weight: 700;
     text-decoration: none;
-}  
-
-.twitter-footer {
     margin-left: 0;
     position: relative;
-    
-}
+}  
 
 .twitter-footer::before {
     content: "";
@@ -35,11 +37,6 @@
     
 }
 
-.instagram-footer {
-    margin-left: 0;
-    position: relative;
-    
-}
 
 .instagram-footer::before {
     content: "";
@@ -54,11 +51,6 @@
     
 }
 
-.fb-footer {
-    margin-left: 0;
-    position: relative;
-    
-}
 
 .fb-footer::before {
     content: "";
@@ -73,7 +65,7 @@
     
 }
 
-.fgoogle-footer {
+.google-footer {
     margin-left: 0;
     position: relative;
     
@@ -92,4 +84,3 @@
     
 }
 
-*/

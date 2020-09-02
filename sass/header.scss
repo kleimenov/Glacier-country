@@ -5,12 +5,20 @@
 }
 
 
+.logo {
+    margin: 0;
+    padding: 0;
+    width: 255px;
+    height: 186px;
+    margin-left: 50px;
+}
+
 .header-nav {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: $glacier_color;
+    background-color: rgb(171, 196, 206);
 }
 
 .scheme-selector {
