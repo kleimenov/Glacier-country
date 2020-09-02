@@ -1,0 +1,23 @@
+.header-wrapper {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1%;
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: $glacier_color;
+}
+
+.scheme-selector {
+    margin: 0;
+    padding: 0;
+}
+
+.scheme-button {
+    display: block;
+}

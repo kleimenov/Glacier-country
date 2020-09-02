@@ -10,37 +10,168 @@
     <link rel="icon" href="assets/iceRock.png" type="image/png">
 </head>
 <body>
-    <header class="container">
-        <div>
+    <header class="header-wrapper">
+        <div class="header-nav">
             <img class="logo"
                 src="#"
                 alt="header-logo">
-            <div>
-                <button>Bright scheme</button>
-                <button>Dark scheme</button>
+            <div class="scheme-selector">
+                <button class="scheme-button">Bright scheme</button>
+                <button class="scheme-button">Dark scheme</button>
             </div>
         </div>
     </header>
     <main>
         <section id="hero">
-            <ul>
+            <ul class="slider">
                 <li>
-                    <img src="#" alt="slider image glacier">
+                    <img class ="sliderImg" src="assets/sliderPic1.jpg" alt="slider image glacier">
                 </li>
                <li>
-                    <img src="#" alt="slider image landscape and glacier infront">
+                    <img class ="sliderImg" src="assets/sliderPic2.jpg" alt="slider image landscape and glacier infront">
                 </li>
                 <li>
-                    <img src="#" alt="slider image landscape and calm water">
+                    <img class ="sliderImg" src="assets/sliderPic3.jpg" alt="slider image landscape and calm water">
                 </li>
                 <li>
-                    <img src="#" alt="slider image landskape murky weather">
+                    <img class ="sliderImg" src="assets/sliderPic4.jpg" alt="slider image landskape murky weather">
                 </li>
                 <li>
-                    <img src="#" alt="slider image landscape and glacier infront winter">
+                    <img class ="sliderImg" src="assets/sliderPic5.jpg" alt="slider image landscape and glacier infront winter">
                 </li>
             </ul>
         </section>
+        <div class="container">
+    
+            <section id="dropdown filter">
+                <div class="dropdown">
+                    <button class="dropbtn">Come close to magic</button>
+                    <div class="dropdown-content">
+                        <a href="#">Animals</a>
+                        <a href="#">Cliffs</a>
+                        <a href="#">Lighthouse</a>
+                        <a href="#">City/Village</a>
+                        <a href="#">Other</a>
+                    </div>      
+                </div>
+                <ul class="gallery-list">
+                    <li>
+                        <img class="gallery-picture gallery-animal" src="assets/animals_1.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-animal" src="assets/animals(whale)_2.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-animal" src="assets/animals_3.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-animal" src="assets/animals_4.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-city" src="assets/city_1.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-city" src="assets/city_2.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-city" src="assets/city_3.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-city" src="assets/city_4.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-city" src="assets/city_5.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_1.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_2.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_3.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_5.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_6.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_1.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_2.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_3.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_4.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_5.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_6.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-other" src="assets/other_aurora.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-other" src="assets/other_iceberg.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-other" src="assets/other_iceberg2.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-other" src="assets/other_landscape.jpg" alt="#">
+                    </li>
+                    <li>
+                        <img class="gallery-picture gallery-other" src="assets/other_shore.jpg" alt="#">
+                    </li>
+                </ul>
+            </section>
+        
+            <section id="modalBox">
+                <div class="ctas">
+                    <button id="contactBtn">Contact us</button>
+                    <button id="aboutBtn">About us</button>
+                    <button id="mapBtn">Map</button>
+                </div>
+                <div id="contactModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form class="contactUsForm" action="#" method="post">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="firstName" id="contacts" placeholder="Your name...">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lastName" id="contacts" placeholder="Your surname...">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="contacts" placeholder="Your email...">
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write your message.." style="height:200px"></textarea>
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="aboutModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>About us</h3>
+                        <p>
+                            Here will be text about us......
+                        </p>
+                    </div>
+                </div>
+                <div id="mapModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <ul class="footer-sm-links">
