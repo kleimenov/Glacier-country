@@ -22,7 +22,7 @@
         </div>
     </header>
     <main>
-        <section id="hero">
+        <section class="slideshow-container" id="hero">
             <ul class="slider">
                 <li>
                     <img class ="sliderImg" src="assets/sliderPic1.jpg" alt="slider image glacier">
@@ -40,108 +40,114 @@
                     <img class ="sliderImg" src="assets/sliderPic5.jpg" alt="slider image landscape and glacier infront winter">
                 </li>
             </ul>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </section>
+        <div class="dot-style">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
         <div class="container">
-    
             <section id="dropdown filter">
                 <div class="dropdown">
                     <button class="dropbtn">Come close to magic</button>
                     <div class="dropdown-content">
-                        <a href="#">Animals</a>
-                        <a href="#">Cliffs</a>
-                        <a href="#">Lighthouse</a>
-                        <a href="#">City/Village</a>
-                        <a href="#">Other</a>
+                        <a id="gallery-animal">Animals</a>
+                        <a id="gallery-cliff">Cliffs</a>
+                        <a id="gallery-lighthouse">Lighthouse</a>
+                        <a id="gallery-city">City/Village</a>
+                        <a id="gallery-other">Other</a>
+                        <a id="return-all">Show all pictures</a>
                     </div>      
                 </div>
-                <!--
                 <ul class="gallery-list">
                     <li>
-                        <img class="gallery-picture gallery-animal" src="assets/animals_1.jpg" alt="#">
+                        <img class="gallery-picture gallery-animal" src="assets/animals_1.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-animal" src="assets/animals(whale)_2.jpg" alt="#">
+                        <img class="gallery-picture gallery-animal" src="assets/animals(whale)_2.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-animal" src="assets/animals_3.jpg" alt="#">
+                        <img class="gallery-picture gallery-animal" src="assets/animals_3.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-animal" src="assets/animals_4.jpg" alt="#">
+                        <img class="gallery-picture gallery-animal" src="assets/animals_4.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-city" src="assets/city_1.jpg" alt="#">
+                        <img class="gallery-picture gallery-city" src="assets/city_1.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-city" src="assets/city_2.jpg" alt="#">
+                        <img class="gallery-picture gallery-city" src="assets/city_2.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-city" src="assets/city_3.jpg" alt="#">
+                        <img class="gallery-picture gallery-city" src="assets/city_3.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-city" src="assets/city_4.jpg" alt="#">
+                        <img class="gallery-picture gallery-city" src="assets/city_4.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-city" src="assets/city_5.jpg" alt="#">
+                        <img class="gallery-picture gallery-city" src="assets/city_5.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-cliff" src="assets/cliff_1.jpg" alt="#">
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_1.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-cliff" src="assets/cliff_2.jpg" alt="#">
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_2.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-cliff" src="assets/cliff_3.jpg" alt="#">
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_3.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-cliff" src="assets/cliff_5.jpg" alt="#">
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_5.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-cliff" src="assets/cliff_6.jpg" alt="#">
+                        <img class="gallery-picture gallery-cliff" src="assets/cliff_6.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_1.jpg" alt="#">
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_1.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_2.jpg" alt="#">
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_2.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_3.jpg" alt="#">
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_3.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_4.jpg" alt="#">
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_4.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_5.jpg" alt="#">
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_5.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_6.jpg" alt="#">
+                        <img class="gallery-picture gallery-lighthouse" src="assets/lighthouse_6.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-other" src="assets/other_aurora.jpg" alt="#">
+                        <img class="gallery-picture gallery-other" src="assets/other_aurora.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-other" src="assets/other_iceberg.jpg" alt="#">
+                        <img class="gallery-picture gallery-other" src="assets/other_iceberg.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-other" src="assets/other_iceberg2.jpg" alt="#">
+                        <img class="gallery-picture gallery-other" src="assets/other_iceberg2.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-other" src="assets/other_landscape.jpg" alt="#">
+                        <img class="gallery-picture gallery-other" src="assets/other_landscape.webp" alt="#">
                     </li>
                     <li>
-                        <img class="gallery-picture gallery-other" src="assets/other_shore.jpg" alt="#">
+                        <img class="gallery-picture gallery-other" src="assets/other_shore.webp" alt="#">
                     </li>
                 </ul>
-                -->
             </section>
-        
             <section id="modalBox">
                 <div class="ctas">
                     <button id="contactBtn">Contact us</button>
                     <button id="aboutBtn">About us</button>
                     <button id="mapBtn">Map</button>
                 </div>
-                <div id="contactModal" class="modal">
+                <div id="contactModal" class="modal modal-hidden">
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <form class="contactUsForm" action="#" method="post">
@@ -157,7 +163,7 @@
                         </form>
                     </div>
                 </div>
-                <div id="aboutModal" class="modal">
+                <div id="aboutModal" class="modal modal-hidden">
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <h3>About us</h3>
@@ -166,7 +172,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="mapModal" class="modal">
+                <div id="mapModal" class="modal modal-hidden">
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <iframe src="" frameborder="0"></iframe>
@@ -199,5 +205,6 @@
             </li>
         </ul>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
