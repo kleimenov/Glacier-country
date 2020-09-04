@@ -117,3 +117,28 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 */
+
+
+//Weather widget
+
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+    selector:".weatherWidget",
+    apiKey:"SY7R4XBSKAQ3NMQHIBUE6NJ46", 
+    location:"Reykjavik, Iceland", 
+    unitGroup:"metric", 
+    forecastDays:5, 
+    title:"Reykjavik, Iceland", 
+    showTitle:true, 
+    showConditions:true
+   });
+  
+   (function() {
+   let s = document.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (document.head || document.body).appendChild(s);
+   })();
+   
+
+   
