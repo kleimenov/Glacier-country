@@ -120,7 +120,7 @@ function showSlides() {
 
 
 //Weather widget
-
+/*
    window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
    window.weatherWidgetConfig.push({
     selector:".weatherWidget",
@@ -140,5 +140,5 @@ function showSlides() {
    (document.head || document.body).appendChild(s);
    })();
    
-
+*/
    
