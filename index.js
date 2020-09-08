@@ -71,7 +71,7 @@ for (let i = 0; i <dropdownLinks.length; i++) {
     })
 }
 
-
+/*
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -84,7 +84,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-/*
+
 function showSlides(n) {
    
     let slides = document.getElementsByClassName("sliderImg");
