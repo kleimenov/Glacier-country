@@ -190,14 +190,28 @@ ul, li, p {
   }
   
   /* Modal Content/Box */
-  .modal-content {
+.modal-content {
+    
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-  }
+}
   
+.contactUsForm label{
+    display: block;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid $glacier_color;
+    border-radius: 10%;
+  }
+
   /* The Close Button */
   .close {
     color: #aaa;

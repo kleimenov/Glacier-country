@@ -281,6 +281,19 @@ ul, li, p {
   /* Could be more or less, depending on screen size */
 }
 
+.contactUsForm label {
+  display: block;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #78beec;
+  border-radius: 10%;
+}
+
 /* The Close Button */
 .close {
   color: #aaa;
@@ -344,8 +357,8 @@ ul, li, p {
 .logo {
   margin: 0;
   padding: 0;
-  width: 255px;
-  height: 186px;
+  width: 260px;
+  height: 110px;
   margin-left: 50px;
   opacity: 0.5;
 }
