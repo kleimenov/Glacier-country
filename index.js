@@ -84,7 +84,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
+/*
 function showSlides(n) {
    
     let slides = document.getElementsByClassName("sliderImg");
@@ -100,8 +100,8 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block"; 
     dots[slideIndex-1].className += " active";
 }
+*/
 
-/*
 var slideIndex = 0;
 showSlides();
 
@@ -114,33 +114,11 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 3 seconds
 }
-*/
 
 
-//Weather widget
-/*
-   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-   window.weatherWidgetConfig.push({
-    selector:".weatherWidget",
-    apiKey:"SY7R4XBSKAQ3NMQHIBUE6NJ46", 
-    location:"Reykjavik, Iceland", 
-    unitGroup:"metric", 
-    forecastDays:5, 
-    title:"Reykjavik, Iceland", 
-    showTitle:true, 
-    showConditions:true
-   });
-  
-   (function() {
-   let s = document.createElement('script');
-   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (document.head || document.body).appendChild(s);
-   })();
-   
-*/
+
    
 
 /*-------*/
@@ -198,29 +176,7 @@ tempElement.addEventListener('click', function() {
 
 )
 
-/*
-if("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(setPosition, showError);
-}
-else {
-    notificationElement.style.display = "block";
-    notificationElement.innerHTML = "<p> Browser Doesn't support Geolocation.</p>"
-}
 
- 
-function setPosition(position) {
-    console.log("setPosition ");
-    let latitude = position.coords.latitude;
-    let longtitude = position.coords.longtitude;
-    
-    getWeather(latitude, longtitude)
-}
-
-function showError(error) {
-    notificationElement.style.display = "block";
-    notificationElement.innerHTML = `<p> ${error.message} </p>`;
-}
-*/
 getWeather()
 const weather ={};
 weather.temperature = {
@@ -259,3 +215,4 @@ function getWeather() {
         displayWeather();
     });
 }
+
