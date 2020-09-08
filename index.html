@@ -81,7 +81,7 @@
         <div class="container">
             <section>
                 <div class="dropdown">
-                    <button class="dropbtn">Image filter<span class="filter-arrow">&#8609;</span></button>
+                    <button class="dropbtn">Image filter<span class="filter-arrow">&#9660;</span></button>
                     <div class="dropdown-content">
                         <a id="gallery-animal">Animals</a>
                         <a id="gallery-cliff">Cliffs</a>
@@ -180,23 +180,34 @@
                         <span class="close">&times;</span>
                         <form class="contactUsForm" action="#" method="post">
                             <label for="fname">First Name</label>
-                            <input type="text" name="firstName" id="fname" placeholder="Your name...">
+                            <input type="text" name="firstName" id="fname" placeholder="Your name..." autocomplete="off">
                             <label for="lname">Last Name</label>
-                            <input type="text" name="lastName" id="lname" placeholder="Your surname...">
+                            <input type="text" name="lastName" id="lname" placeholder="Your surname..." autocomplete="off">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="Your email...">
+                            <input type="text" name="email" id="email" placeholder="Your email..." autocomplete="off">
                             <label for="subject">Subject</label>
                             <textarea id="subject" name="subject" placeholder="Write your message.." style="height:200px"></textarea>
                         </form>
-                        <button>Submit</button>
+                        <button class="submit-button">Submit</button>
                     </div>
                 </div>
                 <div id="aboutModal" class="modal modal-hidden">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h3>About us</h3>
-                        <p>
-                            Here will be text about us......
+                    <div class="modal-content modal-content--opacity">
+                        <span class="close close--dark">&times;</span>
+                        <h3 class="aboutUsHeader">About us</h3>
+                        <p class="textAboutUs">
+                            Iceland, a Nordic island nation, is defined by its dramatic landscape with volcanoes, 
+                            geysers, hot springs and lava fields. Massive glaciers are protected in Vatnajökull 
+                            and Snæfellsjökull national parks. Most of the population lives in the capital, Reykjavik, 
+                            which runs on geothermal power and is home to the National and Saga museums, 
+                            tracing Iceland’s Viking history. The Sagas of Icelanders say that a Norwegian named Naddodd (or Naddador)
+                            was the first Norseman to reach Iceland, and in the 9th century he named it Snæland or "snow land" because it was snowing. 
+                            Following Naddodd, the Swede Garðar Svavarsson arrived, and so the island was then called Garðarshólmur which means "Garðar's Isle".
+                            Then came a Viking named Flóki Vilgerðarson; his daughter drowned en route, then his livestock starved to death. 
+                            The sagas say that the rather despondent Flóki climbed a mountain and saw a fjord (Arnarfjörður) full of icebergs, 
+                            which led him to give the island its new and present name. The notion that Iceland's Viking settlers chose 
+                            that name to discourage oversettlement of their verdant isle is a myth. More information you can find 
+                            <a class="aboutUsLink" href="https://en.wikipedia.org/wiki/Iceland">HERE.</a>
                         </p>
                     </div>
                 </div>
