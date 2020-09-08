@@ -103,9 +103,15 @@ ul, li, p {
     background-color: $color_white;
     color: $glacier_color;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
+}
+
+.filter-arrow {
+    margin-top: 0;
+    font-size: 28px;
+    padding: 4px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -215,3 +221,38 @@ ul, li, p {
     color: red;
 }
 */
+
+.weather-wrapper {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 999;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 130px;
+    text-align: center;
+    font-size: 18px;
+    //border: 2px solid rgb(186, 227, 235);
+    border-radius: 21%;
+    background-color: rgba(255,255,255, 0.1);
+
+}
+
+.weather-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(32, 33, 36, 0.7);
+}
+
+.temperature-value {
+    font-size: 22px;
+    font-weight: bold;
+    //color: rgb(32, 33, 36);
+    color: rgba(32, 33, 36, 0.7);
+}
+
+.location {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(32, 33, 36, 0.7);
+}

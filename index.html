@@ -44,6 +44,24 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             -->
+            <div class="weather-wrapper">
+                <div class="weather-title">Weather</div>
+                <div class="notification"></div>
+                <div class="weather-container">
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png">
+                    </div>
+                    <div class="temperature-value">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div class="temperature-description">
+                        <p> - </p>
+                    </div>
+                    <div class="location">
+                        <p> - </p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--
         <div class="dot-style">
@@ -58,30 +76,12 @@
         <div class="weatherWidget" ></div>
          -->
         
-        <div class="container">
-        <div class="app-title">Weather</div>
-        <div class="notification"></div>
-        <div class="weather-container">
-            <div class="weather-icon">
-                <img src="icons/unknown.png">
-            </div>
-            <div class="temperature-value">
-                <p>- °<span>C</span></p>
-            </div>
-            <div class="temperature-description">
-                <p> - </p>
-            </div>
-            <div class="location">
-                <p> - </p>
-            </div>
-        </div>
-        </div>
 
         <!-- -->
         <div class="container">
-            <section id="dropdown filter">
+            <section>
                 <div class="dropdown">
-                    <button class="dropbtn">Come close to magic</button>
+                    <button class="dropbtn">Image filter<span class="filter-arrow">&#8609;</span></button>
                     <div class="dropdown-content">
                         <a id="gallery-animal">Animals</a>
                         <a id="gallery-cliff">Cliffs</a>
