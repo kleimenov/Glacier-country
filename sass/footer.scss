@@ -18,8 +18,8 @@
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
-    padding-top: 15px;
+    justify-content: center;
+    padding-top: 40px;
     min-height: 150px;
     list-style: none;
 }
@@ -29,13 +29,20 @@
     font-size: 12px;
     font-weight: 700;
     text-decoration: none;
+    padding-bottom: 40px;
+    padding-left: 80px;
     margin-left: 0;
+    margin-right: 15px;
     position: relative;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
 
     &::before {
         content: "";
         position: absolute;
-        left: 0;
+        left: 5px;
         width: 30px;
         height: 30px;
         background-repeat: no-repeat;
@@ -69,9 +76,8 @@
 }
 
 .footer-social-list .google-footer::before {
-    top: 4px;
-    left: unset;
-    right: 0;
+    top: 3px;
+    left: 0;
     width: 40px;
     height: 40px;
     background-image: url("assets/google-plus-g-brands.svg");
