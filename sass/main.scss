@@ -419,9 +419,10 @@ textarea {
 
 }
 
-.temperature-description {
-    font-size: 22px;
+.temperature-description p{
+    font-size: 18px;
     font-weight: normal;
+    color: rgba(32, 33, 36, 0.7);
     @media (max-width: 660px) {
         font-size: 12px;
         font-weight: normal;
