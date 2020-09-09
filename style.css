@@ -240,12 +240,12 @@ ul, li, p {
 }
 @media (max-width: 755px) {
   .dropbtn {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 550px) {
   .dropbtn {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -572,7 +572,7 @@ textarea {
 }
 @media (max-width: 550px) {
   .ctas button {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: normal;
   }
 }
@@ -591,14 +591,14 @@ textarea {
   margin: 0;
   padding: 0;
   width: 260px;
-  height: auto;
+  height: 110px;
   margin-left: 50px;
   opacity: 0.5;
 }
 @media (max-width: 855px) {
   .logo {
     width: 220px;
-    height: auto;
+    height: 70px;
     margin-left: 0;
     margin-right: 25px;
   }
@@ -606,15 +606,15 @@ textarea {
 @media (max-width: 660px) {
   .logo {
     width: 120px;
-    height: auto;
+    height: 40px;
     margin-left: 15px;
     margin-right: 0;
   }
 }
 @media (max-width: 550px) {
   .logo {
-    width: 60px;
-    height: auto;
+    width: 90px;
+    height: 40px;
     margin-left: 0;
     margin-right: 25px;
   }
