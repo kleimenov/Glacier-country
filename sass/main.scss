@@ -13,6 +13,29 @@
     @media (max-width: 1065px) {
         width: 950px;
     }
+
+    @media (max-width: 955px) {
+        width: 850px;
+    }
+
+    @media (max-width: 855px) {
+        width: 750px;
+    }
+
+    @media (max-width: 755px) {
+        width: 650px;
+    }
+
+    @media (max-width: 660px) {
+        width: 550px;
+    }
+    @media (max-width: 550px) {
+        width: 450px;
+    }
+    @media (max-width: 449px) {
+        width: 350px;
+    }
+
 }
 
 
@@ -110,6 +133,11 @@ ul, li, p {
     font-weight: bold;
     border: none;
     cursor: pointer;
+
+    @media (max-width: 755px) {
+        font-size: 18px;
+    }
+
 }
 
 .dropbtn:hover {
@@ -168,8 +196,26 @@ ul, li, p {
 .gallery-list li {
     width: 19%;
     height: 120px;
-    margin-right: 1%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
     margin-bottom: 1%;
+    @media (max-width: 660px) {
+        width: 17%;
+        height: 120px;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        margin-bottom: 1.5%;
+    }
+
+    @media (max-width: 550px) {
+        width: 17%;
+        height: 120px;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        margin-bottom: 1.5%;
+    }
+    
+
 }
 
 .gallery-picture {
@@ -315,13 +361,20 @@ textarea {
     //border: 2px solid rgb(186, 227, 235);
     border-radius: 21%;
     background-color: rgba(255,255,255, 0.1);
-
+    @media (max-width: 660px) {
+        width: 80px;
+    }
 }
 
 .weather-title {
     font-size: 20px;
     font-weight: bold;
     color: rgba(32, 33, 36, 0.7);
+
+    @media (max-width: 660px) {
+        font-size: 14px;
+        font-weight: normal;
+    }
 }
 
 .temperature-value {
@@ -329,12 +382,30 @@ textarea {
     font-weight: bold;
     //color: rgb(32, 33, 36);
     color: rgba(32, 33, 36, 0.7);
+    @media (max-width: 660px) {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+}
+
+.temperature-description {
+    font-size: 22px;
+    font-weight: normal;
+    @media (max-width: 660px) {
+        font-size: 12px;
+        font-weight: normal;
+    }
 }
 
 .location {
     font-size: 17px;
     font-weight: bold;
     color: rgba(32, 33, 36, 0.7);
+    @media (max-width: 660px) {
+        font-size: 12px;
+        font-weight: normal;
+    }
 }
 
 .ctas {
@@ -357,6 +428,11 @@ textarea {
     // margin: 4px 5px;
     //margin-bottom: 10px;
     cursor: pointer;
+
+    @media (max-width: 660px) {
+        font-size: 14px;
+        font-weight: normal;
+    }
 
     
 }

@@ -24,22 +24,22 @@ input::placeholder {
   padding: 0;
   justify-content: center;
   padding-top: 40px;
-  min-height: 150px;
   list-style: none;
+}
+
+.footer-social-list li:last-of-type a {
+  padding-left: 40px;
 }
 
 .footer-social-list a {
   font-size: 12px;
   font-weight: 700;
   text-decoration: none;
-  padding-bottom: 40px;
+  padding-top: 30px;
   padding-left: 80px;
   margin-left: 0;
   margin-right: 15px;
   position: relative;
-}
-.footer-social-list a:last-of-type {
-  margin-right: 0;
 }
 .footer-social-list a::before {
   content: "";
@@ -49,6 +49,12 @@ input::placeholder {
   height: 30px;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+@media (max-width: 660px) {
+  .footer-social-list a::before {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .twitter-footer::before {
@@ -78,6 +84,12 @@ input::placeholder {
   height: 40px;
   background-image: url("assets/google-plus-g-brands.svg");
 }
+@media (max-width: 660px) {
+  .footer-social-list .google-footer::before {
+    width: 35px;
+    height: 35px;
+  }
+}
 
 * {
   margin: 0;
@@ -93,6 +105,36 @@ input::placeholder {
 @media (max-width: 1065px) {
   .container {
     width: 950px;
+  }
+}
+@media (max-width: 955px) {
+  .container {
+    width: 850px;
+  }
+}
+@media (max-width: 855px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 755px) {
+  .container {
+    width: 650px;
+  }
+}
+@media (max-width: 660px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 450px;
+  }
+}
+@media (max-width: 449px) {
+  .container {
+    width: 350px;
   }
 }
 
@@ -186,6 +228,11 @@ ul, li, p {
   border: none;
   cursor: pointer;
 }
+@media (max-width: 755px) {
+  .dropbtn {
+    font-size: 18px;
+  }
+}
 
 .dropbtn:hover {
   opacity: 0.7;
@@ -243,8 +290,27 @@ ul, li, p {
 .gallery-list li {
   width: 19%;
   height: 120px;
-  margin-right: 1%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
   margin-bottom: 1%;
+}
+@media (max-width: 660px) {
+  .gallery-list li {
+    width: 17%;
+    height: 120px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-bottom: 1.5%;
+  }
+}
+@media (max-width: 550px) {
+  .gallery-list li {
+    width: 17%;
+    height: 120px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-bottom: 1.5%;
+  }
 }
 
 .gallery-picture {
@@ -392,11 +458,22 @@ textarea {
   border-radius: 21%;
   background-color: rgba(255, 255, 255, 0.1);
 }
+@media (max-width: 660px) {
+  .weather-wrapper {
+    width: 80px;
+  }
+}
 
 .weather-title {
   font-size: 20px;
   font-weight: bold;
   color: rgba(32, 33, 36, 0.7);
+}
+@media (max-width: 660px) {
+  .weather-title {
+    font-size: 14px;
+    font-weight: normal;
+  }
 }
 
 .temperature-value {
@@ -404,11 +481,34 @@ textarea {
   font-weight: bold;
   color: rgba(32, 33, 36, 0.7);
 }
+@media (max-width: 660px) {
+  .temperature-value {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.temperature-description {
+  font-size: 22px;
+  font-weight: normal;
+}
+@media (max-width: 660px) {
+  .temperature-description {
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
 
 .location {
   font-size: 17px;
   font-weight: bold;
   color: rgba(32, 33, 36, 0.7);
+}
+@media (max-width: 660px) {
+  .location {
+    font-size: 12px;
+    font-weight: normal;
+  }
 }
 
 .ctas {
@@ -430,6 +530,12 @@ textarea {
   text-decoration: none;
   cursor: pointer;
 }
+@media (max-width: 660px) {
+  .ctas button {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
 
 .ctas button:hover,
 .ctas button:active {
@@ -439,16 +545,31 @@ textarea {
 .header-wrapper {
   margin: 0;
   padding: 0;
-  margin-bottom: 0.2%;
 }
 
 .logo {
   margin: 0;
   padding: 0;
   width: 260px;
-  height: 110px;
+  height: auto;
   margin-left: 50px;
   opacity: 0.5;
+}
+@media (max-width: 855px) {
+  .logo {
+    width: 220px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 660px) {
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 0;
+  }
 }
 
 .header-nav {
@@ -457,6 +578,17 @@ textarea {
   margin: 0;
   padding: 0;
   background-color: #cfdaea;
+}
+@media (max-width: 855px) {
+  .header-nav {
+    justify-content: center;
+    background-color: #bccae0;
+  }
+}
+@media (max-width: 660px) {
+  .header-nav {
+    justify-content: space-between;
+  }
 }
 
 .scheme-selector {

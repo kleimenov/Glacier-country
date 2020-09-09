@@ -1,7 +1,7 @@
 .header-wrapper {
     margin: 0;
     padding: 0;
-    margin-bottom: 0.2%;
+    //margin-bottom: 0.2%;
 }
 
 
@@ -9,9 +9,21 @@
     margin: 0;
     padding: 0;
     width: 260px;
-    height: 110px;
+    height: auto;
     margin-left: 50px;
     opacity: 0.5;
+    @media (max-width: 855px) {
+        width: 220px;
+        height: auto;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+    @media (max-width: 660px) {
+        width: 120px;
+        height: auto;
+        margin-left: 15px;
+        margin-right: 0;
+    }
 }
 
 .header-nav {
@@ -20,6 +32,14 @@
     margin: 0;
     padding: 0;
     background-color: rgb(207, 218, 234);
+    @media (max-width: 855px) {
+        justify-content: center;
+        background-color: rgb(188, 202, 224);
+    }
+
+    @media (max-width: 660px) {
+        justify-content: space-between;
+    }
 }
 
 .scheme-selector {
