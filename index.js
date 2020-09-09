@@ -57,14 +57,14 @@ for (let i = 0; i <dropdownLinks.length; i++) {
         
         for (let j = 0; j < galleryElements.length; j++) {
             if (category === 'return-all') {
-                display(galleryElements[j].parentElement);
+                display(galleryElements[j].parentElement.parentElement);
             }
             else {
                 if (galleryElements[j].classList.contains(category)) {
-                    display(galleryElements[j].parentElement);
+                    display(galleryElements[j].parentElement.parentElement);
                 }
                 else {
-                    hide(galleryElements[j].parentElement);
+                    hide(galleryElements[j].parentElement.parentElement);
                 }
             } 
         }
