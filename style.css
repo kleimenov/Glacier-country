@@ -146,12 +146,22 @@ ul, li, p {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100vw;
-  min-height: 350px;
   max-height: 550px;
   object-fit: cover;
   position: relative;
   margin: auto;
   overflow: hidden;
+}
+@media (max-width: 550px) {
+  .slideshow-container {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 550px) {
+  .slider {
+    max-height: 350px;
+  }
 }
 
 .slider li {
@@ -230,7 +240,12 @@ ul, li, p {
 }
 @media (max-width: 755px) {
   .dropbtn {
-    font-size: 18px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .dropbtn {
+    font-size: 10px;
   }
 }
 
@@ -242,6 +257,16 @@ ul, li, p {
   margin-top: 0;
   font-size: 22px;
   padding: 4px;
+}
+@media (max-width: 755px) {
+  .filter-arrow {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .filter-arrow {
+    font-size: 10px;
+  }
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -293,6 +318,15 @@ ul, li, p {
   margin-right: 0.5%;
   margin-left: 0.5%;
   margin-bottom: 1%;
+  /*
+      @media (max-width: 550px) {
+          width: 17%;
+          height: 120px;
+          margin-right: 1.5%;
+          margin-left: 1.5%;
+          margin-bottom: 1.5%;
+      }
+  */
 }
 @media (max-width: 660px) {
   .gallery-list li {
@@ -305,11 +339,11 @@ ul, li, p {
 }
 @media (max-width: 550px) {
   .gallery-list li {
-    width: 17%;
-    height: 120px;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
-    margin-bottom: 1.5%;
+    width: 32%;
+    height: 80px;
+    margin-right: 0.65%;
+    margin-left: 0.65%;
+    margin-bottom: 0.5%;
   }
 }
 
@@ -532,7 +566,13 @@ textarea {
 }
 @media (max-width: 660px) {
   .ctas button {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+@media (max-width: 550px) {
+  .ctas button {
+    font-size: 10px;
     font-weight: normal;
   }
 }
@@ -571,6 +611,14 @@ textarea {
     margin-right: 0;
   }
 }
+@media (max-width: 550px) {
+  .logo {
+    width: 60px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 25px;
+  }
+}
 
 .header-nav {
   display: flex;
@@ -588,6 +636,11 @@ textarea {
 @media (max-width: 660px) {
   .header-nav {
     justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .header-nav {
+    justify-content: center;
   }
 }
 

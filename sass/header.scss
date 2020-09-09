@@ -24,6 +24,12 @@
         margin-left: 15px;
         margin-right: 0;
     }
+    @media (max-width: 550px) {
+        width: 60px;
+        height: auto;
+        margin-left: 0;
+        margin-right: 25px;
+    }
 }
 
 .header-nav {
@@ -39,6 +45,9 @@
 
     @media (max-width: 660px) {
         justify-content: space-between;
+    }
+    @media (max-width: 550px) {
+        justify-content: center;
     }
 }
 

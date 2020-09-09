@@ -48,12 +48,23 @@ ul, li, p {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100vw;
-  min-height: 350px;
+  //min-height: 350px;
   max-height: 550px;
   object-fit: cover;
   position: relative;
   margin: auto;
   overflow: hidden;
+  @media (max-width: 550px) {
+    overflow: hidden;
+}
+
+}
+
+.slider {
+    @media (max-width: 550px) {
+        max-height: 350px;
+    }
+    
 }
 
 .slider li {
@@ -135,7 +146,12 @@ ul, li, p {
     cursor: pointer;
 
     @media (max-width: 755px) {
-        font-size: 18px;
+        font-size: 14px;
+
+    }
+    @media (max-width: 550px) {
+        font-size: 10px;
+       
     }
 
 }
@@ -148,6 +164,12 @@ ul, li, p {
     margin-top: 0;
     font-size: 22px;
     padding: 4px;
+    @media (max-width: 755px) {
+        font-size: 14px;
+    }
+    @media (max-width: 550px) {
+        font-size: 10px;
+    }
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -206,13 +228,21 @@ ul, li, p {
         margin-left: 1.5%;
         margin-bottom: 1.5%;
     }
-
+/*
     @media (max-width: 550px) {
         width: 17%;
         height: 120px;
         margin-right: 1.5%;
         margin-left: 1.5%;
         margin-bottom: 1.5%;
+    }
+*/
+    @media (max-width: 550px) {
+        width: 32%;
+        height: 80px;
+        margin-right: 0.65%;
+        margin-left: 0.65%;
+        margin-bottom: 0.5%;
     }
     
 
@@ -430,11 +460,15 @@ textarea {
     cursor: pointer;
 
     @media (max-width: 660px) {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
     }
 
-    
+    @media (max-width: 550px) {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
 }
 
 .ctas button:hover,
