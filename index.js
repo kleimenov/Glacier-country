@@ -216,3 +216,25 @@ function getWeather() {
     });
 }
 
+
+
+//show big image if user clicked on imgage
+let imageModal = document.getElementById('popUpImageModal');
+let img = imageModal.querySelector(".imgPopUp");
+//let imgCont = imgBig.querySelector('.modal-content');
+
+for (let i=0; i < galleryElements.length; i++) {
+    galleryElements[i].addEventListener('click', function(){
+        let img_src = galleryElements[i].src;
+        //console.log(img_src);
+        //imgCont.innerHTML = `<span class="close">&times;</span><img class="imgPopUp" src="${img_src}"/>`;
+        //let img = document.createElement("img");
+        //img.classList.add("imgPopUp");
+        
+        img.src = img_src;
+        //imgCont.appendChild(img)
+        //console.log(imgBig);
+        display(imageModal);
+    })
+}
+

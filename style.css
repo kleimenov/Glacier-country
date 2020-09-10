@@ -403,6 +403,10 @@ ul, li, p {
   }
 }
 
+.imgPopUp {
+  width: 95%;
+}
+
 .contactUsForm label {
   display: block;
 }
