@@ -406,6 +406,11 @@ ul, li, p {
 .imgPopUp {
   width: 95%;
 }
+@media (max-width: 550px) {
+  .imgPopUp {
+    width: 93%;
+  }
+}
 
 .contactUsForm label {
   display: block;
