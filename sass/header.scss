@@ -27,8 +27,8 @@
     @media (max-width: 550px) {
         width: 90px;
         height: 40px;
-        margin-left: 0;
-        margin-right: 25px;
+        //margin-left: 10px;
+       // margin-right: 0;
     }
 }
 
@@ -49,6 +49,10 @@
     @media (max-width: 550px) {
         justify-content: center;
     }
+    @media (max-width: 450px) {
+        justify-content: space-between;
+    }
+
 }
 
 .scheme-selector {

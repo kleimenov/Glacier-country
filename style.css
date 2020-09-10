@@ -662,8 +662,6 @@ textarea {
   .logo {
     width: 90px;
     height: 40px;
-    margin-left: 0;
-    margin-right: 25px;
   }
 }
 
@@ -688,6 +686,11 @@ textarea {
 @media (max-width: 550px) {
   .header-nav {
     justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .header-nav {
+    justify-content: space-between;
   }
 }
 
