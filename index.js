@@ -230,7 +230,6 @@ for (let i=0; i < galleryElements.length; i++) {
         //imgCont.innerHTML = `<span class="close">&times;</span><img class="imgPopUp" src="${img_src}"/>`;
         //let img = document.createElement("img");
         //img.classList.add("imgPopUp");
-        
         img.src = img_src;
         //imgCont.appendChild(img)
         //console.log(imgBig);
