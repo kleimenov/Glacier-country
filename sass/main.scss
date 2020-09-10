@@ -300,6 +300,8 @@ ul, li, p {
 }
 
 input[type=text] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -308,8 +310,14 @@ input[type=text] {
     //border-radius: 10%;
     background-color: rgba(120, 190, 236, 0.2);
     color: white;
-    
-  }
+}
+
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: $color_shade_white;
+}
+
 
 label {
     color: white;
@@ -318,6 +326,9 @@ label {
 }
 
 textarea {
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     width: 100%;
     height: 150px;
     padding: 12px 20px;
@@ -326,7 +337,7 @@ textarea {
     border: 2px solid $glacier_color;
     border-radius: 4px;
     background-color: rgba(120, 190, 236, 0.2);
-    resize: none;
+    //resize: none;
   }
 
 .submit-button {
@@ -340,6 +351,7 @@ textarea {
     margin: 4px 2px;
     cursor: pointer;
 }
+
   
 .aboutUsHeader {
     margin-bottom: 5px;
@@ -395,7 +407,13 @@ textarea {
     color: red;
 }
 */
-
+.map {
+    width: 95%;
+    height:450px;
+    @media (max-width: 550px) {
+        width: 93%;
+    }
+}
 .weather-wrapper {
     position: absolute;
     top: 2%;
