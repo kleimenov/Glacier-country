@@ -38,7 +38,9 @@ Semantic HTML is used for all webpages markup with the elements of block - eleme
 All elements are styled with CSS using the inheritance and cascading rules, and selectors specificity. 
 CSS rules are contained in a separate .scss files for easier maitenance and then compiled with the Sass preprocessor into a CSS style master file 
 to reduce the number of interactions with a server. Responsiveness is provided by the usage of media queries and sass variables. 
+
 All algorithms were implemented with JavaScript. This includes DOM manipulation (DOM elements creation and modification) and API fetching.
+
 ---
 ### Descriptions of JavaScript features 
 1) _Weather API_ implemented on vanilla JavaScript. Weather API architecture includes following functions: Function displayWeather() creates DOM elements that contains weather data. 
