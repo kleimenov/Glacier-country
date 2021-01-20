@@ -43,13 +43,13 @@ All algorithms were implemented with JavaScript. This includes DOM manipulation 
 
 ---
 ### Descriptions of JavaScript features 
-1) _Weather API_ implemented on vanilla JavaScript. Weather API architecture includes following functions: Function displayWeather() creates DOM elements that contains weather data. 
+1) Weather API implemented on vanilla JavaScript. Weather API architecture includes following functions: Function displayWeather() creates DOM elements that contains weather data. 
 Function getWeather()fetches weather API from outer resource. Functions celsiusToFahrenheit() and fahrenheitToCelsius() calculate and transition data to the measurement sistem convenient for user.
-2) _Slider_ architecture includes function showSlides(), this function gets DOM elements that contains images for slider. 
+2) Slider architecture includes function showSlides(), this function gets DOM elements that contains images for slider. 
 Iterate over images array, and after that check condition and show particular image and change image every 3 seconds.
-3) _Filter_ algorithm includes follow steps: find loop over images array, listen for the event a user click on the button, shows the dropdown menu, after choose on specific image type and click the button, 
+3) Filter algorithm includes follow steps: find loop over images array, listen for the event a user click on the button, shows the dropdown menu, after choose on specific image type and click the button, 
 afther that algorithm find specific images and show just particular image.
-4) There are _three different modals_ in this project, the first _contact us form_, second _about us_ information modal, and last is the _map_ modal that use Google API to fetch geo data. 
+4) There are three different modals in this project, the first _contact us form_, second _about us_ information modal, and last is the _map_ modal that use Google API to fetch geo data. 
 Implemented algorithm allows to show and hide modals. Algorithm includes following steps: find modal element inside HTML markup, listen for the event a user click on the button, show the modal booking form, 
 get user's data, hide modal form when user click on a particular button. Map modal include additionl steps withs allows getting Google API geo data.
 
