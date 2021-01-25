@@ -43,7 +43,7 @@ All algorithms were implemented with JavaScript. This includes DOM manipulation 
 
 ---
 ### Descriptions of JavaScript features 
-1) Weather API implemented on vanilla JavaScript. Weather API architecture includes following functions: Function displayWeather() creates DOM elements that contains weather data. 
+1) Weather API implemented on vanilla JavaScript (I use my personal KEY from api.openweathermap.org because of that in open source at Github I use place holder 'password', it means if you want to see real weather please use your personal KEY). Weather API architecture includes following functions: Function displayWeather() creates DOM elements that contains weather data. 
 Function getWeather()fetches weather API from outer resource. Functions celsiusToFahrenheit() and fahrenheitToCelsius() calculate and transition data to the measurement sistem convenient for user.
 2) Slider architecture includes function showSlides(), this function gets DOM elements that contains images for slider. 
 Iterate over images array, and after that check condition and show particular image and change image every 3 seconds.
