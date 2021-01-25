@@ -188,7 +188,7 @@ const KELVIN = 273;
 
 //API key
 
-const key = '072e3ec2199386d51ce3c8b4fd8b194d';
+const key = 'password';
 
 //src
 const linkApi = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=YOUR_API_KEY';
@@ -196,7 +196,7 @@ const linkApi = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&app
 function getWeather() {
     console.log("first");
     // let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longtitude}&appid=${key}`;
-    let api = `https://api.openweathermap.org/data/2.5/weather?q=Reykjavik&appid=072e3ec2199386d51ce3c8b4fd8b194d`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?q=Reykjavik&appid=password`;
 
     fetch(api).then(function(response){
         let data = response.json();
