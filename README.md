@@ -20,7 +20,7 @@ Above was provided a brief description of the Glacier country project.
 ---
 ### Tech descripton and specification
 
-This website includes three web pages. All pages are responsive, work with a broad variety of screens in range from mobile devices (screen width 320px)
+This website includes one web pages. Page is responsive, work with a broad variety of screens in range from mobile devices (screen width 320px)
 to desktops (screen width 1200px and higher). This cross-devices website affords users to feel comfortable interacting with content whether the size of the screen their device has.
 
 This project is build with the following technologies:
